@@ -1,241 +1,509 @@
-<!DOCTYPE html>
-<!-- saved from url=(0041)http://www.nkrow.ru/video-s-mk-kati-upit/ -->
-<html>
+<!doctype html>
+<html lang="ko">
 <head>
-    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-    <meta charset="utf-8">
-    <link rel="stylesheet" type="text/css" href="./index_files/style.css">
-    <script type="text/javascript" async="" src="./index_files/watch.js"></script>
-    <script src="./index_files/jquery-latest.js"></script>
-    <script src="./index_files/js-image-slider.js"></script>
-    <script src="./index_files/common.js"></script>
-    <title>Видео с МК Кати Упит | nKrow.ru</title>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="K-water K-series 디지털 물관리 기술 S/W 소개" />
+  <title>K-series | Digital Water Management Software</title>
+  <style>
+    :root {
+      --bg: #f5f8fb;
+      --surface: #ffffff;
+      --text: #132238;
+      --muted: #5d6b7a;
+      --line: #dfe7ef;
+      --primary: #0066b3;
+      --primary-dark: #004f8b;
+      --accent: #00a7a5;
+      --max: 1180px;
+      --radius: 20px;
+      --shadow: 0 16px 42px rgba(26, 54, 93, .10);
+    }
 
-    <style type="text/css">
-        #fancybox-close {
-            right: -15px;
-            top: -15px
-        }
+    * { box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
+    body {
+      margin: 0;
+      font-family: Pretendard, "Noto Sans KR", "Apple SD Gothic Neo", "Malgun Gothic", Arial, sans-serif;
+      color: var(--text);
+      background: var(--bg);
+      line-height: 1.65;
+    }
 
-        div#fancybox-content {
-            border-color: #FFFFFF
-        }
+    a { color: inherit; text-decoration: none; }
+    .wrap { width: min(calc(100% - 40px), var(--max)); margin: 0 auto; }
 
-        div#fancybox-title {
-            background-color: #FFFFFF
-        }
+    header {
+      position: sticky;
+      top: 0;
+      z-index: 20;
+      background: rgba(255,255,255,.94);
+      backdrop-filter: blur(12px);
+      border-bottom: 1px solid rgba(223,231,239,.9);
+    }
 
-        div#fancybox-outer {
-            background-color: #FFFFFF
-        }
+    nav {
+      height: 68px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 24px;
+    }
 
-        div#fancybox-title-inside {
-            color: #333333
-        }
-    </style>
+    .brand {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      font-weight: 800;
+      font-size: 1.12rem;
+      letter-spacing: -.02em;
+    }
 
-    <link rel="stylesheet" id="fancybox-css" href="./index_files/fancybox.css" type="text/css" media="all">
-    <script type="text/javascript">
-        /* <![CDATA[ */
-        window.CKEDITOR_BASEPATH = "http://www.nkrow.ru/wp-content/plugins/ckeditor-for-wordpress/ckeditor/";
-        var ckeditorSettings = { "textarea_id": "comment", "pluginPath": "http:\/\/www.nkrow.ru\/wp-content\/plugins\/ckeditor-for-wordpress\/", "autostart": true, "excerpt_state": false, "qtransEnabled": false, "outputFormat": { "indent": true, "breakBeforeOpen": true, "breakAfterOpen": true, "breakBeforeClose": true, "breakAfterClose": true }, "configuration": { "height": "160px", "skin": "moono", "scayt_autoStartup": false, "entities": true, "entities_greek": true, "entities_latin": true, "toolbar": "WordpressBasic", "templates_files": [ "http:\/\/www.nkrow.ru\/wp-content\/plugins\/ckeditor-for-wordpress\/ckeditor.templates.js" ], "stylesCombo_stylesSet": "wordpress:http:\/\/www.nkrow.ru\/wp-content\/plugins\/ckeditor-for-wordpress\/ckeditor.styles.js", "customConfig": "http:\/\/www.nkrow.ru\/wp-content\/plugins\/ckeditor-for-wordpress\/ckeditor.config.js" }, "externalPlugins": [  ], "additionalButtons": [  ] }
-        /* ]]> */
-    </script>
-    <style type="text/css">
-        #content table.cke_editor {
-            margin: 0;
-        }
+    .brand-mark {
+      width: 34px;
+      height: 34px;
+      border-radius: 11px;
+      display: grid;
+      place-items: center;
+      background: linear-gradient(135deg, var(--primary), var(--accent));
+      color: white;
+      font-size: .9rem;
+      font-weight: 900;
+    }
 
-        #content table.cke_editor tr td {
-            padding: 0;
-            border: 0;
-        }
-    </style>
-    <script type="text/javascript" src="./index_files/jquery.js"></script>
-    <script type="text/javascript" src="./index_files/jquery.fancybox.js"></script>
-    <script type="text/javascript" src="./index_files/ckeditor.js"></script>
-    <style>.cke {
-        visibility: hidden;
-    }</style>
-    <script type="text/javascript" src="./index_files/ckeditor.utils.js"></script>
-    <link rel="prev" title="Главная страница" href="http://www.nkrow.ru/">
-    <link rel="next" title="sdsad" href="http://www.nkrow.ru/video-s-mk-kati-upit/sdsad/">
+    .nav-links { display: flex; gap: 24px; font-size: .95rem; color: var(--muted); }
+    .nav-links a:hover { color: var(--primary); }
 
-    <!-- Fancybox for WordPress v3.0.2 -->
-    <script type="text/javascript">
-        jQuery(function () {
+    .hero {
+      background:
+        radial-gradient(circle at 82% 18%, rgba(0,167,165,.15), transparent 30%),
+        radial-gradient(circle at 12% 12%, rgba(0,102,179,.14), transparent 32%),
+        linear-gradient(180deg, #ffffff 0%, #eef7fb 100%);
+      padding: 96px 0 86px;
+      border-bottom: 1px solid var(--line);
+    }
 
-            jQuery.fn.getTitle = function () { // Copy the title of every IMG tag and add it to its parent A so that fancybox can show titles
-                var arr = jQuery("a.fancybox");
-                jQuery.each(arr, function () {
-                    var title = jQuery(this).children("img").attr("title");
-                    jQuery(this).attr('title', title);
-                })
-            }
+    .hero-grid {
+      display: grid;
+      grid-template-columns: 1.3fr .7fr;
+      gap: 54px;
+      align-items: center;
+    }
 
-// Supported file extensions
-            var thumbnails = jQuery("a:has(img)").not(".nolightbox").filter(function () {
-                return /\.(jpe?g|png|gif|bmp)$/i.test(jQuery(this).attr('href'))
-            });
+    .eyebrow {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      color: var(--primary);
+      font-weight: 800;
+      font-size: .87rem;
+      letter-spacing: .06em;
+      text-transform: uppercase;
+      margin-bottom: 16px;
+    }
 
-            thumbnails.addClass("fancybox").attr("rel", "fancybox").getTitle();
-            jQuery("a.fancybox").fancybox({
-                'cyclic': false,
-                'autoScale': true,
-                'padding': 0,
-                'opacity': true,
-                'speedIn': 500,
-                'speedOut': 500,
-                'changeSpeed': 300,
-                'overlayShow': true,
-                'overlayOpacity': "0.5",
-                'overlayColor': "#000000",
-                'titleShow': true,
-                'titlePosition': 'inside',
-                'enableEscapeButton': true,
-                'showCloseButton': true,
-                'showNavArrows': true,
-                'hideOnOverlayClick': true,
-                'hideOnContentClick': false,
-                'width': 560,
-                'height': 340,
-                'transitionIn': "fade",
-                'transitionOut': "fade",
-                'centerOnScroll': true
-            });
+    h1 {
+      margin: 0;
+      font-size: clamp(2.7rem, 7vw, 5.4rem);
+      line-height: .98;
+      letter-spacing: -.06em;
+    }
 
+    .hero h1 span {
+      display: block;
+      color: var(--primary);
+      font-size: .52em;
+      line-height: 1.2;
+      margin-top: 16px;
+      letter-spacing: -.035em;
+    }
 
-        })
-    </script>
-    <!-- END Fancybox for WordPress -->
+    .lead {
+      margin: 28px 0 0;
+      font-size: clamp(1.03rem, 2vw, 1.22rem);
+      color: var(--muted);
+      max-width: 760px;
+      word-break: keep-all;
+    }
 
-    <!-- All in One SEO Pack 2.0 by Michael Torbert of Semper Fi Web Design[410,462] -->
-    <link rel="canonical" href="./index_files/index.html">
-    <!-- /all in one seo pack -->
+    .hero-actions {
+      margin-top: 34px;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 12px;
+    }
+
+    .btn {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      min-height: 46px;
+      padding: 0 20px;
+      border-radius: 12px;
+      font-weight: 750;
+      border: 1px solid var(--line);
+      background: white;
+    }
+
+    .btn.primary {
+      color: white;
+      border-color: var(--primary);
+      background: var(--primary);
+    }
+
+    .btn.primary:hover { background: var(--primary-dark); }
+    .btn.secondary:hover { border-color: var(--primary); color: var(--primary); }
+
+    .hero-card {
+      background: rgba(255,255,255,.84);
+      border: 1px solid rgba(255,255,255,.9);
+      box-shadow: var(--shadow);
+      border-radius: 26px;
+      padding: 30px;
+    }
+
+    .hero-card .label { color: var(--muted); font-size: .9rem; }
+    .hero-card .big { font-size: 3.3rem; font-weight: 900; letter-spacing: -.05em; line-height: 1; margin: 8px 0 12px; }
+    .hero-card p { margin: 0; color: var(--muted); }
+    .mini-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 10px;
+      margin-top: 24px;
+    }
+
+    .mini {
+      padding: 15px 10px;
+      text-align: center;
+      border-radius: 14px;
+      background: #f3f8fb;
+      border: 1px solid #e6eef5;
+      font-weight: 800;
+      font-size: .84rem;
+    }
+
+    section { padding: 84px 0; }
+    .section-title { margin-bottom: 34px; }
+    .section-title small { color: var(--primary); font-weight: 800; letter-spacing: .07em; }
+    .section-title h2 { margin: 8px 0 10px; font-size: clamp(2rem, 4vw, 3rem); letter-spacing: -.045em; }
+    .section-title p { margin: 0; color: var(--muted); max-width: 760px; word-break: keep-all; }
+
+    .about {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 26px;
+    }
+
+    .panel {
+      background: var(--surface);
+      border: 1px solid var(--line);
+      border-radius: var(--radius);
+      padding: 30px;
+      box-shadow: 0 10px 28px rgba(28,51,84,.05);
+    }
+
+    .panel h3 { margin: 0 0 12px; font-size: 1.3rem; }
+    .panel p { margin: 0; color: var(--muted); }
+
+    .software-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 18px;
+    }
+
+    .software-card {
+      background: var(--surface);
+      border: 1px solid var(--line);
+      border-radius: 18px;
+      padding: 24px;
+      min-height: 190px;
+      transition: transform .18s ease, box-shadow .18s ease, border-color .18s ease;
+    }
+
+    .software-card:hover {
+      transform: translateY(-4px);
+      border-color: #b9d7ea;
+      box-shadow: var(--shadow);
+    }
+
+    .software-name {
+      display: inline-block;
+      color: var(--primary);
+      background: #eaf5fb;
+      border-radius: 9px;
+      padding: 5px 9px;
+      font-weight: 900;
+      font-size: .92rem;
+      margin-bottom: 17px;
+    }
+
+    .software-card h3 { margin: 0 0 8px; font-size: 1.18rem; }
+    .software-card p { margin: 0; color: var(--muted); font-size: .95rem; }
+
+    .flow {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 14px;
+    }
+
+    .flow-step {
+      position: relative;
+      padding: 26px 22px;
+      border-radius: 18px;
+      background: linear-gradient(180deg, #ffffff, #f6fbfd);
+      border: 1px solid var(--line);
+    }
+
+    .flow-step b { display: block; font-size: 1.05rem; margin-bottom: 8px; }
+    .flow-step span { color: var(--muted); font-size: .92rem; }
+    .flow-num {
+      width: 34px;
+      height: 34px;
+      display: grid;
+      place-items: center;
+      border-radius: 50%;
+      background: var(--primary);
+      color: white;
+      font-size: .82rem;
+      font-weight: 900;
+      margin-bottom: 16px;
+    }
+
+    .notice {
+      padding: 34px;
+      border-radius: 22px;
+      background: #0d2f4d;
+      color: white;
+      display: grid;
+      grid-template-columns: 1fr auto;
+      gap: 28px;
+      align-items: center;
+    }
+
+    .notice h3 { margin: 0 0 8px; font-size: 1.4rem; }
+    .notice p { margin: 0; color: rgba(255,255,255,.76); max-width: 800px; }
+    .notice .btn { border-color: rgba(255,255,255,.35); background: white; color: #0d2f4d; white-space: nowrap; }
+
+    footer {
+      padding: 34px 0 42px;
+      color: var(--muted);
+      border-top: 1px solid var(--line);
+      background: white;
+      font-size: .9rem;
+    }
+
+    .footer-row {
+      display: flex;
+      justify-content: space-between;
+      gap: 24px;
+      align-items: center;
+    }
+
+    @media (max-width: 900px) {
+      .hero-grid, .about { grid-template-columns: 1fr; }
+      .software-grid { grid-template-columns: repeat(2, 1fr); }
+      .flow { grid-template-columns: repeat(2, 1fr); }
+      .hero { padding-top: 72px; }
+      .hero-card { max-width: 560px; }
+    }
+
+    @media (max-width: 620px) {
+      .wrap { width: min(calc(100% - 28px), var(--max)); }
+      .nav-links { display: none; }
+      .hero { padding: 58px 0 62px; }
+      section { padding: 62px 0; }
+      .software-grid, .flow { grid-template-columns: 1fr; }
+      .notice { grid-template-columns: 1fr; }
+      .footer-row { align-items: flex-start; flex-direction: column; }
+    }
+  </style>
 </head>
 <body>
-<div class="wrapper">
-    <div class="logo"><a title="На главную" href="http://www.nkrow.ru/"><img src="./index_files/logo.png"
-                                                                             alt="Лого сайта"></a></div>
-    <ul class="menu">
-        <li><a href="http://www.nkrow.ru/category/blog/"><span>Л</span>ента</a></li>
-        <li><a href="http://www.nkrow.ru/404/"><span>Ф</span>отографии</a></li>
-        <li><a href="http://www.nkrow.ru/404/"><span>Л</span>юди</a></li>
-        <li><a href="http://www.nkrow.ru/category/article/"><span>С</span>татьи</a></li>
-        <li><a href="http://www.nkrow.ru/404/"><span>У</span>слуги и стоимость</a></li>
-        <li><a href="http://www.nkrow.ru/category/photocourse/"><span>Ф</span>отокурсы</a></li>
-        <li><a href="http://www.nkrow.ru/404/"><span>К</span>онтакты</a></li>
-    </ul>
-    <div class="text">
-        <p>
-            <br>
-
-        <h1><i>Контактная информация</i></h1></p>
-        <br>
-        <br>
-        <br>
-
-        <p class="kont">- Свзяться со мной вы может любым удомным способом:</p> <br><br>
-
-        <div class="kontakti">
-            <p><i>телефон:</i> 8(908)123-12-12</p> <br>
-
-            <p><i>электронная почта:</i> gfhrue@fr.ru</p> <br>
-
-            <p><i>skype:</i> rjegorgijer</p> <br>
+  <header>
+    <div class="wrap">
+      <nav>
+        <a class="brand" href="#top" aria-label="K-series 홈">
+          <span class="brand-mark">K</span>
+          <span>K-series</span>
+        </a>
+        <div class="nav-links">
+          <a href="#about">소개</a>
+          <a href="#software">기술 S/W</a>
+          <a href="#workflow">물관리 체계</a>
+          <a href="#official">공식 안내</a>
         </div>
-
-        <ul class="botton">
-            <li class="botton1"><a href="/">Одноклассники</a></li>
-            <li class="botton2"><a href="/">Вконтакте</a></li>
-            <li class="botton3"><a href="/">Facebook</a></li>
-            <li class="botton4"><a href="/">Tweeter</a></li>
-        </ul>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-
-        <div class="ps"><p>
-            P.S Я могу находится на съемках и не отвечать на ваш телефоный звонок, в таком случае просто пришлите мне
-            короткое СМС сообщение и я вам перезвоню </p>
-        </div>
-
+      </nav>
     </div>
-    <div class="cop ">© Copyright 2012 nkrow.ru Все материалы на сайте являются собственностью автора.</div>
-</div>
-<div class="none">
-    <!-- Yandex.Metrika counter -->
-    <script type="text/javascript">
-        (function (d, w, c) {
-            (w[c] = w[c] || []).push(function () {
-                try {
-                    w.yaCounter20951818 = new Ya.Metrika({id: 20951818,
-                        webvisor: true,
-                        clickmap: true,
-                        trackLinks: true,
-                        accurateTrackBounce: true});
-                } catch (e) {
-                }
-            });
+  </header>
 
-            var n = d.getElementsByTagName("script")[0],
-                    s = d.createElement("script"),
-                    f = function () {
-                        n.parentNode.insertBefore(s, n);
-                    };
-            s.type = "text/javascript";
-            s.async = true;
-            s.src = (d.location.protocol == "https:" ? "https:" : "http:") + "//mc.yandex.ru/metrika/watch.js";
+  <main id="top">
+    <section class="hero">
+      <div class="wrap hero-grid">
+        <div>
+          <div class="eyebrow">K-water Digital Water Management Software</div>
+          <h1>
+            K-series
+            <span>물관리 기술과 노하우를 소프트웨어로</span>
+          </h1>
+          <p class="lead">
+            K-series는 효율적이고 통합적인 물관리 전 과정을 분석하고 지원하기 위해
+            K-water의 기술 노하우를 소프트웨어 형태로 구현한 디지털 물관리 기술 S/W 패키지입니다.
+          </p>
+          <div class="hero-actions">
+            <a class="btn primary" href="#software">K-series 살펴보기</a>
+            <a class="btn secondary" href="https://www.water.or.kr/kor/menu/sub.do?menuId=15_126_127" target="_blank" rel="noopener">MyWater 공식 안내</a>
+          </div>
+        </div>
 
-            if (w.opera == "[object Opera]") {
-                d.addEventListener("DOMContentLoaded", f, false);
-            } else {
-                f();
-            }
-        })(document, window, "yandex_metrika_callbacks");
-    </script>
-    <noscript>&lt;div&gt;&lt;img src="//mc.yandex.ru/watch/20951818" style="position:absolute; left:-9999px;" alt="" /&gt;&lt;/div&gt;</noscript>
-    <!-- /Yandex.Metrika counter -->
-    <!--LiveInternet counter-->
-    <script type="text/javascript"><!--
-    document.write("<a href='http://www.liveinternet.ru/click' " +
-            "target=_blank><img src='//counter.yadro.ru/hit?t45.1;r" +
-            escape(document.referrer) + ((typeof(screen) == "undefined") ? "" :
-            ";s" + screen.width + "*" + screen.height + "*" + (screen.colorDepth ?
-                    screen.colorDepth : screen.pixelDepth)) + ";u" + escape(document.URL) +
-            ";" + Math.random() +
-            "' alt='' title='LiveInternet' " +
-            "border='0' width='31' height='31'><\/a>")
-    //--></script>
-    <a href="http://www.liveinternet.ru/click" target="_blank"><img src="./index_files/hit" alt="" title="LiveInternet"
-                                                                    border="0" width="31" height="31"></a>
-    <!--/LiveInternet-->
-</div>
+        <aside class="hero-card" aria-label="K-series 요약">
+          <div class="label">PUBLIC OVERVIEW</div>
+          <div class="big">9</div>
+          <p>강우·유출부터 하천, 홍수, 지하수, 저수지 및 물관리 의사결정까지 연결하는 대표 기술 S/W를 소개합니다.</p>
+          <div class="mini-grid">
+            <div class="mini">분석</div>
+            <div class="mini">예측</div>
+            <div class="mini">연계</div>
+          </div>
+        </aside>
+      </div>
+    </section>
 
-<div id="fancybox-tmp"></div>
-<div id="fancybox-loading">
-    <div></div>
-</div>
-<div id="fancybox-overlay"></div>
-<div id="fancybox-wrap">
-    <div id="fancybox-outer">
-        <div class="fancybox-bg" id="fancybox-bg-n"></div>
-        <div class="fancybox-bg" id="fancybox-bg-ne"></div>
-        <div class="fancybox-bg" id="fancybox-bg-e"></div>
-        <div class="fancybox-bg" id="fancybox-bg-se"></div>
-        <div class="fancybox-bg" id="fancybox-bg-s"></div>
-        <div class="fancybox-bg" id="fancybox-bg-sw"></div>
-        <div class="fancybox-bg" id="fancybox-bg-w"></div>
-        <div class="fancybox-bg" id="fancybox-bg-nw"></div>
-        <div id="fancybox-content"></div>
-        <a id="fancybox-close"></a>
+    <section id="about">
+      <div class="wrap">
+        <div class="section-title">
+          <small>ABOUT</small>
+          <h2>디지털 물관리 솔루션</h2>
+          <p>
+            기후위기와 복잡해지는 물관리 환경에 대응하기 위해, 다양한 분석 기능을
+            개별 S/W로 구현하고 물관리 업무 전반에서 활용할 수 있도록 구성한 기술 체계입니다.
+          </p>
+        </div>
 
-        <div id="fancybox-title"></div>
-        <a href="javascript:;" id="fancybox-left"><span class="fancy-ico" id="fancybox-left-ico"></span></a><a
-            href="javascript:;" id="fancybox-right"><span class="fancy-ico" id="fancybox-right-ico"></span></a></div>
-</div>
+        <div class="about">
+          <article class="panel">
+            <h3>물관리 전 과정 지원</h3>
+            <p>강우·유출, 하천 수리, 홍수·침수, 지하수, 저수지 등 서로 연결된 물관리 문제를 목적별 S/W로 분석합니다.</p>
+          </article>
+          <article class="panel">
+            <h3>기술 노하우의 S/W화</h3>
+            <p>K-water가 축적한 물관리 경험과 분석기술을 반복 활용 가능한 디지털 도구로 구현하는 것을 지향합니다.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="software">
+      <div class="wrap">
+        <div class="section-title">
+          <small>K-SERIES SOFTWARE</small>
+          <h2>대표 기술 S/W</h2>
+          <p>공개 소개 페이지에 제시된 K-series 주요 S/W를 기능 중심으로 간단히 정리했습니다.</p>
+        </div>
+
+        <div class="software-grid">
+          <article class="software-card">
+            <span class="software-name">K-DRUM</span>
+            <h3>강우–유출 분석</h3>
+            <p>유역 강우자료를 기반으로 홍수 유출을 분석하는 수문 모델링 도구입니다.</p>
+          </article>
+          <article class="software-card">
+            <span class="software-name">K-River</span>
+            <h3>하천 수리해석</h3>
+            <p>하천의 수위와 유량 변화를 분석하는 1차원 수리해석 도구입니다.</p>
+          </article>
+          <article class="software-card">
+            <span class="software-name">K-Flood</span>
+            <h3>홍수·침수 해석</h3>
+            <p>홍수 시 범람과 침수 확산을 모의하기 위한 2차원 수리해석 도구입니다.</p>
+          </article>
+          <article class="software-card">
+            <span class="software-name">K-GW</span>
+            <h3>지하수 분석</h3>
+            <p>지하수 관련 물관리 분석을 지원하는 기술 S/W입니다.</p>
+          </article>
+          <article class="software-card">
+            <span class="software-name">K-RSIM</span>
+            <h3>저수지 모의</h3>
+            <p>저수지의 유입·저류·방류 특성을 모의하고 운영 분석을 지원합니다.</p>
+          </article>
+          <article class="software-card">
+            <span class="software-name">K-AEP+</span>
+            <h3>물관리 분석 지원</h3>
+            <p>수자원 및 물관리 관련 분석을 지원하는 K-series 기술 S/W입니다.</p>
+          </article>
+          <article class="software-card">
+            <span class="software-name">K-HQ</span>
+            <h3>수위–유량 분석</h3>
+            <p>수위와 유량의 관계를 분석하고 유량 산정 업무를 지원합니다.</p>
+          </article>
+          <article class="software-card">
+            <span class="software-name">K-FIM</span>
+            <h3>홍수범람·침수 매핑</h3>
+            <p>홍수 해석 결과를 공간적으로 연결해 침수 영향과 범위를 표현하는 데 활용됩니다.</p>
+          </article>
+          <article class="software-card">
+            <span class="software-name">K-VCM</span>
+            <h3>물관리 의사결정 지원</h3>
+            <p>다양한 물관리 정보를 연계해 분석과 의사결정을 지원하는 기술 S/W입니다.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="workflow">
+      <div class="wrap">
+        <div class="section-title">
+          <small>INTEGRATED WATER MANAGEMENT</small>
+          <h2>하나의 흐름으로 연결</h2>
+          <p>K-series는 개별 모델의 기능뿐 아니라 물관리 분석 단계 간 연계를 통해 활용성을 높이는 것을 지향합니다.</p>
+        </div>
+
+        <div class="flow">
+          <div class="flow-step">
+            <div class="flow-num">01</div>
+            <b>강우·유출</b>
+            <span>유역 입력자료와 유출 반응 분석</span>
+          </div>
+          <div class="flow-step">
+            <div class="flow-num">02</div>
+            <b>하천·홍수</b>
+            <span>하천 수위·유량 및 범람 영향 분석</span>
+          </div>
+          <div class="flow-step">
+            <div class="flow-num">03</div>
+            <b>저수지·운영</b>
+            <span>저류와 방류를 고려한 물관리 분석</span>
+          </div>
+          <div class="flow-step">
+            <div class="flow-num">04</div>
+            <b>통합 활용</b>
+            <span>분석 결과를 연계해 의사결정 지원</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="official">
+      <div class="wrap">
+        <div class="notice">
+          <div>
+            <h3>공식 배포 및 이용조건은 MyWater에서 확인하세요.</h3>
+            <p>
+              이 GitHub 저장소는 K-series를 간단히 소개하기 위한 공개 페이지입니다.
+              설치파일, 소스코드, 공식 이용조건 및 최신 배포정보는 K-water의 공식 안내를 기준으로 합니다.
+            </p>
+          </div>
+          <a class="btn" href="https://www.water.or.kr/kor/menu/sub.do?menuId=15_126_127" target="_blank" rel="noopener">공식 페이지 열기</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="wrap footer-row">
+      <div><strong>K-series</strong> · K-water Digital Water Management Software</div>
+      <div>Public introduction page · Official information: K-water MyWater</div>
+    </div>
+  </footer>
 </body>
 </html>
